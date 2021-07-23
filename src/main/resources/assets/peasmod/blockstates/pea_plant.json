@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "stage=bottom0": { "model": "peasmod:block/peas_stage0" },
+        "stage=bottom1": { "model": "peasmod:block/peas_stage1" },
+        "stage=bottom2": { "model": "peasmod:block/peas_stage2" },
+        "stage=bottom3": { "model": "peasmod:block/peas_stage3" },
+        "stage=top0": { "model": "peasmod:block/peas_stage4" },
+        "stage=bottom4": { "model": "peasmod:block/peas_stage5" },
+        "stage=bottom5": { "model": "peasmod:block/peas_stage6" },
+        "stage=bottom6": { "model": "peasmod:block/peas_stage7" }
+    }
+}

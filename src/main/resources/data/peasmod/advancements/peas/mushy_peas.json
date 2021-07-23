@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "peasmod:mushy_peas"
+    },
+    "title": {
+      "translate": "advancements.peasmod.peas.mushy_peas.title",
+      "bold": true
+    },
+    "description": {
+      "translate": "advancements.peasmod.peas.mushy_peas.description",
+      "color": "0x77c730"
+    },
+    "background": "minecraft:hay_block",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "peasmod:peas/root",
+  "criteria": {
+    "has_mushy_peas": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "peasmod:mushy_peas"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_mushy_peas"
+    ]
+  ],
+  "rewards": {
+    "experience": 5000
+  }
+}

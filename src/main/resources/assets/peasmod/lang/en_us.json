@@ -1,0 +1,11 @@
+{
+	"item.peasmod.pea": "Pea",
+	"item.peasmod.frozen_peas": "Frozen Peas",
+	"item.peasmod.pea_pod": "Pea Pod",
+	"item.peasmod.mushy_peas": "Mushy Peas",
+	"itemGroup.peasmod": "Peas Mod",
+	"advancements.peasmod.peas.root.title": "Peas",
+	"advancements.peasmod.peas.root.description": "All about the peas.",
+	"advancements.peasmod.peas.mushy_peas.title": "Why did you do that?",
+	"advancements.peasmod.peas.mushy_peas.description": "Obtain some mushy peas!"
+}

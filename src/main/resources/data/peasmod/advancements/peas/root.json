@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "peasmod:pea"
+    },
+    "title": {
+      "translate": "advancements.peasmod.peas.root.title"
+    },
+    "description": {
+      "translate": "advancements.peasmod.peas.root.description"
+    },
+    "background": "minecraft:textures/block/hay_block_side.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "consumed_item": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "peasmod:pea"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "consumed_item"
+    ]
+  ]
+}

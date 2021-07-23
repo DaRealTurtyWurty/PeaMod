@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+[[mods]]
+	modId="peasmod"
+	version="1.0"
+	displayName="Peas Mod"
+	logoFile="examplemod.png"
+	credits="Peas"
+	authors="TurtyWurty"
+	description='''
+	Peas!
+	'''
