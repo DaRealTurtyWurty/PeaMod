@@ -1,0 +1,9 @@
+{
+	"parent": "forge:item/default",
+	"loader": "forge:bucket",
+	"textures": {
+		"base": "item/bucket",
+		"fluid": "peasmod:items/drip_bucket"
+	},
+	"fluid": "peasmod:mushy_peas_source"
+}

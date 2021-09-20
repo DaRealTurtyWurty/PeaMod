@@ -1,5 +1,6 @@
 package io.github.darealturtywurty.peasmod.common.items;
 
+import io.github.darealturtywurty.peasmod.core.config.ServerConfig;
 import io.github.darealturtywurty.peasmod.core.init.ItemInit;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -42,8 +43,8 @@ public class FrozenPeasItem extends Item {
 
 	@Override
 	public ActionResult<ItemStack> use(final World world, final PlayerEntity player, final Hand hand) {
-		if (player.isHurt()) {
-			player.setHealth(player.getHealth() + player.getMaxHealth() / 2f);
+		if (player.isHurt() && !world.isClientSide) {
+			player.setHealth(player.getHealth() + ServerConfig.frozenPeasHealAmount);
 			final ItemStack stack = player.getMainHandItem();
 			player.getMainHandItem().hurtAndBreak(1, player, plr -> {
 				if (!plr.isSilent() && world.isClientSide()) {
@@ -52,7 +53,6 @@ public class FrozenPeasItem extends Item {
 				}
 				spawnItemParticles(stack, plr, 5);
 				plr.setItemInHand(hand, new ItemStack(ItemInit.PEA.get(), 8));
-				System.out.println("im here!");
 			});
 			return ActionResult.success(stack);
 		}

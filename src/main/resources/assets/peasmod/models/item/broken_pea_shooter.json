@@ -1,0 +1,6 @@
+{
+	"parent": "peasmod:item/pea_shooter",
+	"textures": {
+		"main": "peasmod:items/broken_pea_shooter"
+	}
+}

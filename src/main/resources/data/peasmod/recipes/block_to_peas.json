@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "peasmod:pea_block"
+        }
+    ],
+    "result": {
+        "item": "peasmod:pea",
+        "count": 9
+    }
+}

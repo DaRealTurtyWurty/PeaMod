@@ -1,7 +1,9 @@
 package io.github.darealturtywurty.peasmod;
 
 import io.github.darealturtywurty.peasmod.core.init.BlockInit;
+import io.github.darealturtywurty.peasmod.core.init.EntityInit;
 import io.github.darealturtywurty.peasmod.core.init.FeatureInit;
+import io.github.darealturtywurty.peasmod.core.init.FluidInit;
 import io.github.darealturtywurty.peasmod.core.init.ItemInit;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -28,5 +30,7 @@ public class PeasMod {
 		ItemInit.ITEMS.register(bus);
 		BlockInit.BLOCKS.register(bus);
 		FeatureInit.FEATURES.register(bus);
+		EntityInit.ENTITIES.register(bus);
+		FluidInit.FLUIDS.register(bus);
 	}
 }
