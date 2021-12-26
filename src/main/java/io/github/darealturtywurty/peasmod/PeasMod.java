@@ -1,5 +1,8 @@
 package io.github.darealturtywurty.peasmod;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import io.github.darealturtywurty.peasmod.core.init.BlockInit;
 import io.github.darealturtywurty.peasmod.core.init.EntityInit;
 import io.github.darealturtywurty.peasmod.core.init.FeatureInit;
@@ -14,23 +17,23 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(PeasMod.MODID)
 public class PeasMod {
 
-	public static final String MODID = "peasmod";
+    public static final String MODID = "peasmod";
+    public static final Logger LOGGER = LogManager.getLogger();
 
-	public static final ItemGroup TAB = new ItemGroup("peasmod") {
+    public static final ItemGroup TAB = new ItemGroup("peasmod") {
+        @Override
+        public ItemStack makeIcon() {
+            return ItemInit.PEA.get().getDefaultInstance();
+        }
+    };
 
-		@Override
-		public ItemStack makeIcon() {
-			return ItemInit.PEA.get().getDefaultInstance();
-		}
-	};
+    public PeasMod() {
+        final IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-	public PeasMod() {
-		final IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
-		ItemInit.ITEMS.register(bus);
-		BlockInit.BLOCKS.register(bus);
-		FeatureInit.FEATURES.register(bus);
-		EntityInit.ENTITIES.register(bus);
-		FluidInit.FLUIDS.register(bus);
-	}
+        ItemInit.ITEMS.register(bus);
+        BlockInit.BLOCKS.register(bus);
+        FeatureInit.FEATURES.register(bus);
+        EntityInit.ENTITIES.register(bus);
+        FluidInit.FLUIDS.register(bus);
+    }
 }
